@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book</title>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'books/styles.css' %}">
+    <link rel="shortcut icon" href="images/social/thumbup.png" />
+</head>
+<body>
+    <div class="head-content">
+        <div class="head-logo">
+            MeetYourNeeds
+        </div>
+        <div class="head-nav">
+            <div class="nav-links">
+                <a href="{% url 'books:index' %}">Home</a>
+            </div>
+            <div class="nav-links">
+                <a href="{% url 'books:login' %}">Login</a>
+            </div>
+            <div class="nav-links">
+                <a href="{% url 'books:about' %}">About</a>
+            </div>
+        </div>
+    
+    </div>
+    
+    {% block body %}
+    {% endblock %}
+
+    <div class="last-content">
+        <div class="footer-info">
+            <h3>HAVE YOU GOT QUESTIONS?</h3>
+            <div class="links">
+                <a href="{% url 'books:something' %}">FAQ</a>
+            </div>
+            <div class="links">
+                <a href="{% url 'books:something' %}">How to plan a reading scheme</a>
+            </div>
+            <div class="links">
+                <a href="{% url 'books:something' %}">Meet new reading friends</a>
+            </div>
+            <div class="links">
+                <a href="{% url 'books:something' %}">I know my book Challange</a>
+            </div>
+            <div class="links">
+                <a href="{% url 'books:something' %}">How to plan a reading scheme</a>
+            </div>
+            <div class="links">
+                <a href="{% url 'books:something' %}">Create your reading alarm</a>
+            </div>
+        </div>
+        <div class="footer-center">
+        <h3>MORE INFO...</h3>
+            <div class="links-center">
+                <a href="{% url 'books:about' %}">Meet our Team</a>
+            </div>
+            <div class="links-center">
+                <a href="{% url 'books:about' %}">what you should know</a>
+            </div>
+        </div>
+        <div class="footer-socials">
+            <h3>Follow Us On</h3>
+            <div class="social">
+                <img src="images/social/facebook.png"><br>Facebook
+            </div>
+            <div class="socail">
+                <img src="images/social/instagram.png"><br>Instagram
+            </div>
+            <div class="social">
+                <img src="images/social/twitter.png"><br>Twitter
+            </div>
+            <div class="social">
+                <img src="images/social/linked.png"><br>LinkedIn
+            </div>
+        </div>
+    </div>
+</body>
+</html>

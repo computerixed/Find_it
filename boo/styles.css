@@ -1,0 +1,299 @@
+body{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.head-logo{
+    height: 32px;
+    border-bottom: 2px solid orangered;
+    transition: 0.8s;
+}
+.head-content{
+    padding:20px;
+    display: flex;
+    justify-content: space-between;
+}
+.head-nav{
+    display:flex;
+    justify-content: space-between;
+    font-weight: bolder;
+}
+.head-content > .head-nav > div{
+    margin-right: 20px;
+    font-size:0.9em;
+    text-transform: uppercase;
+}
+
+.head-nav .nav-links{
+    height:22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+.head-nav .nav-links a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.head-nav .nav-links:hover {
+    border-bottom: 2px solid black;
+}
+.head-nav .nav-links a:hover {
+    color: red;
+}
+.first-body-content{
+    display: grid;
+    grid-template-columns:
+    1fr 1fr 1fr;
+}
+.books-img{
+    position: relative;
+}
+.first-body-img{
+    height: 350px;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat ;
+   
+}
+.first-body-img:hover{
+    filter: blur(7px);
+    -webkit-filter: blur(7px);
+}
+.img-and-text{
+  position:absolute;  
+  display:flex;
+  top: 0;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: center;
+  height: 100%;
+}
+.body-img{
+    width: 50%;
+    margin-bottom: 20px;
+}
+.body-img-short-words a{
+    text-align: center;
+    color:transparent;
+    transition: 0.3s;
+    text-decoration: none;
+    border-bottom: 1px solid purple;
+}
+.body-img-short-words a:hover{
+    color:red;
+    font-size: 20px;
+    font-weight: bolder;
+    
+}
+.second-body-content{
+    display: flex;
+    justify-content: space-around;
+}
+.categories ul a{
+    text-decoration: none;
+}
+.categories ul{
+    list-style: none;
+}
+.categories h1{
+    color:turquoise;
+    padding-bottom: 10px;
+    transition: border-bottom 0.7s;
+ }
+ .categories h1:hover {
+     color:tomato;
+     border-bottom: 1px solid transparent;
+    
+ }
+.categories h2{
+   color:green;
+   border-bottom: 3px solid black;
+   transition: border-bottom 0.7s;
+}
+.categories h2:hover {
+    color:tomato;
+    border-bottom: 1px solid transparent;
+}
+.categories-news video{
+padding-top: 2em;
+width:100%;
+height: 350px;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat ;
+}
+.third-body-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+.third-body-content .slide-with-latest{
+    font-size: 20px;
+    color: darksalmon;
+    width:100%;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat ;
+    text-transform: uppercase;
+}
+.third-body-content .slide-with-older{
+    padding-top:5px;
+    font-size: 20px;
+    color: rgb(66, 19, 29);
+    width:100%;
+    height: 30px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat ;
+    text-transform: uppercase;
+}
+.testimonies{
+    color: darkslategray;
+    font: 1em sans-serif;
+    border-bottom: 1px slateblue dotted;
+    margin-left: 5px;
+}
+.testimonies p {
+    color:tomato;
+    border-bottom: 1px solid turquoise;
+}
+.last-content{
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-around;
+    background-image:url("images/code_back.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat ;
+    background-color: rgb(112, 65, 221);
+    border:1px solid grey;
+    padding: 10px;
+}
+.last-content .footer-info .links{
+    padding: 5px;
+    color:rgb(66, 231, 223)
+}
+.last-content .footer-info .links a{
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    font-weight: lighter;
+    transition: border-bottom 0.5s;
+}
+.last-content .footer-info .links a:hover{
+    color:rgb(228, 84, 185);
+    border-bottom: 2px solid greenyellow;
+}
+.last-content .footer-center .links-center {
+    padding: 5px;
+    color:rgb(66, 231, 223)
+}
+.last-content .footer-center .links-center a{
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    font-weight: lighter;
+    transition: border-bottom 0.5s;
+}
+.last-content .footer-center .links-center a:hover{
+    color:rgb(228, 84, 185);
+    border-bottom: 2px solid greenyellow;
+}
+.footer-info h3{
+    color: white;
+}
+.footer-socials h3{
+    color: white;
+}
+.footer-center h3{
+    color: white;
+}
+.footer-socials{
+    color:orangered;
+}
+/* this is for the login page */
+.background{
+}
+.back-img{
+    
+    filter:brightness(0.3);
+  
+}
+.login-form{
+    padding: 30px;
+    top:500px;
+    position:absolute;
+    left:40%;
+}
+.user input{
+    background-color: transparent;
+    font-size: 22px;
+    border-style: none;
+    border-bottom: 2px solid orangered;
+    text-align: center;
+    color: peachpuff;
+}
+.button input{
+    color: palegreen;
+    padding-left:10px ;
+    background-color: transparent;
+    font-size: 22px;
+    border-radius:3px;
+    border: 2px solid orangered;
+    text-align: center;
+}
+.form .user {
+    padding-bottom: 30px;
+    border-bottom: 2px solid darkviolet;
+}
+.tech {
+    padding-top: 6px;
+    padding-bottom:8px;
+    transition: 0.8s;
+    border-bottom: 1px solid transparent;
+}
+.tech a{
+    color: rgba(187, 20, 179, 0.699);
+    text-decoration: none;
+}
+.tech a:hover{
+    color:rgb(128, 97, 92);
+    border-bottom: 2px solid tomato;
+}
+.remember  {
+    padding-top: 6px;
+    padding-bottom:8px;
+    transition: 0.8s;
+    border-bottom: 1px solid transparent;
+    color: rgba(20, 187, 109, 0.699);
+}
+.sign-up  {
+    padding-top: 6px;
+    padding-bottom:8px;
+    transition: 0.8s;
+    border-bottom: 1px solid transparent;
+    color: rgba(20, 187, 109, 0.699);
+}
+.sign-up:hover{
+    border-bottom: 2px solid tomato;
+}
+.sign-up a{
+    color: rgba(20, 187, 109, 0.699);
+    text-decoration: none;
+}
+.sign-up a:hover{
+    color:rgb(128, 97, 92);
+    border-bottom: 2px solid white;
+}
+/*spiritual page*/
+.arrange{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.down a {
+    color: blueviolet;
+    text-decoration:none;
+    margin-left: 14px;
+}

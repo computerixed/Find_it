@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book</title>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../boo/styles.css">
+    <link rel="shortcut icon" href="../images/social/thumbup.png" />
+</head>
+<body>
+    <div class="head-content">
+        <div class="head-logo">
+            MeetYourNeeds
+        </div>
+        <div class="head-nav">
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="nav-links">
+                <a href="login.html">Login</a>
+            </div>
+            <div class="nav-links">
+                <a href="about.html">About</a>
+            </div>
+        </div>
+    
+    </div>
+
+<div class="background">
+    <div class="back-img">
+        <img src="../images/social/feature-1211.png">
+    </div>
+    <div class="login-form">
+        <form action="{% url 'books:signup' %}" method="post">
+            {% csrf_token %}
+            <div class="user">
+                <input type="text" name="firstname" placeholder="FirstName">
+            </div>
+            <div class="user">
+                <input type="text" name="lastname" placeholder="LastName">
+            </div>
+            <div class="user">
+                <input type="text" name="C_username" placeholder="Choice a Username">
+            </div>
+            <div class="user">
+                <input type="email" name="email" placeholder="E-mail">
+            </div>
+            <div class="user">
+                <input type="password" name="pass" placeholder="Password">
+            </div>
+            <div class="user">
+                <input type="password" name="pass_1" placeholder="Re-enter Password">
+            </div>
+          
+            <div class="remember">
+                <input type="checkbox" name="note"> Send Me an Email any time there is a new release!
+            </div>
+            <div class="button">
+                <a href="{% url 'books:login' %}"><input type="button" name="sign-up" value="Sign-Up"></a>
+            </div>
+            <div class="tech">
+                <a href="{% url 'books:technical' %}">Having a trouble with signing in ?</a>
+            </div>
+            <div class="sign-up">
+                Already a Member ? <a href="{% url 'books:login' %}">Login</a>
+            </div>
+        </form>
+        
+    </div>
+</div>
+
+<div class="last-content">
+    <div class="footer-info">
+        <h3>HAVE YOU GOT QUESTIONS?</h3>
+        <div class="links">
+            <a href="something.html">FAQ</a>
+        </div>
+        <div class="links">
+            <a href="something.html">How to plan a reading scheme</a>
+        </div>
+        <div class="links">
+            <a href="something.html">Meet new reading friends</a>
+        </div>
+        <div class="links">
+            <a href="something.html">I know my book Challange</a>
+        </div>
+        <div class="links">
+            <a href="something.html">How to plan a reading scheme</a>
+        </div>
+        <div class="links">
+            <a href="something.html">Create your reading alarm</a>
+        </div>
+    </div>
+    <div class="footer-center">
+    <h3>MORE INFO...</h3>
+        <div class="links-center">
+            <a href="about.html">Meet our Team</a>
+        </div>
+        <div class="links-center">
+            <a href="about.html">what you should know</a>
+        </div>
+    </div>
+    <div class="footer-socials">
+        <h3>Follow Us On</h3>
+        <div class="social">
+            <img src="../images/social/facebook.png"><br>Facebook
+        </div>
+        <div class="socail">
+            <img src="../images/social/instagram.png"><br>Instagram
+        </div>
+        <div class="social">
+            <img src="../images/social/twitter.png"><br>Twitter
+        </div>
+        <div class="social">
+            <img src="../images/social/linked.png"><br>LinkedIn
+        </div>
+    </div>
+</div>
+</body>
+</html>
